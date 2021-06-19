@@ -4,7 +4,7 @@ import Window from './home/window';
 import Donate from './donate/donate';
 import './styles/styles.css';
 
-import {contents ,url0, url1,title,bottom }from './content/'
+import {contents ,url0, url1,title,bottom, bottom2 }from './content/'
 function App(){
   const [content,setContent] = useState({
     content : contents,
@@ -28,7 +28,7 @@ function App(){
         content : contents,
         url:url1,
         tit: title,
-        bot:bottom
+        bot:bottom2
       }
       )
     }
