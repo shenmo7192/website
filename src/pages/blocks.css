@@ -33,6 +33,7 @@
 }
 
 .into {
+    float: left;
     width: 94%;
     margin-top: 90px;
     margin-left: 3%;

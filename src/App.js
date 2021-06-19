@@ -4,14 +4,15 @@ import Window from './home/window';
 import Donate from './donate/donate';
 import './styles/styles.css';
 
-import {contents ,url0, url1,title,bottom, bottom2 }from './content/'
+import {contents ,url0, url1,title,bottom, bottom2,img }from './content/'
 function App(){
   const [content,setContent] = useState({
     content : contents,
     url: url0,
     english : false,
     tit: title,
-    bot: bottom
+    bot: bottom,
+    pic:img
   });
   function setEnglish(){
     if (content.english===false) {
@@ -20,7 +21,8 @@ function App(){
         content : contents,
         url:url0,
         tit:title,
-        bot:bottom
+        bot:bottom,
+        pic:img
       })
     }else{
       setContent({
@@ -28,7 +30,8 @@ function App(){
         content : contents,
         url:url1,
         tit: title,
-        bot:bottom2
+        bot:bottom2,
+        pic:img
       }
       )
     }

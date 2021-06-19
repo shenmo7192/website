@@ -1,11 +1,10 @@
 import React from 'react';
-import Block from '../pages/blocks'
-import Blocktop from '../pages/blockstop'
+import Block from '../pages/blocks';
+import Blocktop from '../pages/blockstop';
+import Carousel from '../pages/Carousel';
 function Donate(props) {
   return <div>
-            <Block title ={props.pages.tit[0]}
-                      left1 = {props.pages.tit[1]}
-                      img = {props.pages.tit[2]}/>
+            <Carousel data ={props.pages.pic}/>
             {
                   props.pages.content.map(
                     (item,idx) => <Blocktop key={idx}

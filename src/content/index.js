@@ -133,4 +133,26 @@ const bottom = [[b11,b12,b13],
 const bottom2 = [[b21,b22,b23],
                 [b11,b12,b13],
           ];
-export { contents, url0, url1 ,title,bottom,bottom2};
+let m1=<img border="0" 
+              src={require("../imags/02.svg")}
+              alt="sss"
+              style={{
+                height:"100%",
+                width:"100%",
+              }}/>;
+let m2=<img border="0" 
+              src={require("../imags/03.svg")}
+              alt="sss"
+              style={{
+                height:"100%",
+                width:"100%",
+              }}/>;
+let m3=<img border="0" 
+              src={require("../imags/04.svg")}
+              alt="sss"
+              style={{
+                height:"100%",
+                width:"100%",
+              }}/>;
+const img = [m1,m2,m3];
+export { contents, url0, url1 ,title,bottom,bottom2,img};
