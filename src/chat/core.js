@@ -41,15 +41,17 @@ class Core extends Component {
 
   render() {
     return (
-      <div style={{width:'100%',minHeight:300,textAlign:'center'}}>
+      <div style={{width:'100%',textAlign:'center'}}>
       <input id="msg" type="text" value={this.state.input} onChange={this.handleChange} onKeyDown={this.onKeyDown}/>
        <button onClick={this.handleSend}>Hit</button>
+      <div style={{overflow:'scroll',minHeight:100,maxHeight:300}}>
       {
         this.state.list.map(
           (item,idx) => 
         <p key={idx} className="item">{item.data}</p>
         )
       }
+      </div>
       </div>
     );
   }

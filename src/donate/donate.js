@@ -6,8 +6,12 @@ function Donate(props) {
   useEffect(()=>{
     document.title=props.pages.html_title[1];
   },[props])
-  return <div>
+  return <div style={{float:'left'}}>
             <Carousel data ={props.pages.pic}/>
+            <p>&nbsp;</p>
+              <hr/>
+            <p style={{textAlign:'center',fontSize:30}}>{props.pages.html_title[1]}</p>
+            <hr/>
             {
                   props.pages.content.map(
                     (item,idx) => <Blocktop key={idx}

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-//import Core from '../chat/core'
+import Core from '../chat/core'
 import Block from '../pages/blocks'
 import Blocktop from '../pages/blockstop'
 function Window(props) {
@@ -27,7 +27,7 @@ function Window(props) {
                       img={item[2]}/>)
             }
 
-  {/*<Core/>*/}
+  <Core/>
         </div>
 }
 
