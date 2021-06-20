@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Block from '../pages/blocks';
 import Blocktop from '../pages/blockstop';
 import Carousel from '../pages/Carousel';
 function Donate(props) {
+  useEffect(()=>{
+    document.title=props.pages.html_title[1];
+  },[props])
   return <div>
             <Carousel data ={props.pages.pic}/>
             {

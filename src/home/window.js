@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 //import Core from '../chat/core'
 import Block from '../pages/blocks'
 import Blocktop from '../pages/blockstop'
 function Window(props) {
 
+  useEffect(()=>{
+    document.title=props.pages.html_title[0]
+  },[props]);
+  //add props to useEffect,when the page is used, it will do this
   return <div>
             <Block title ={props.pages.tit[0]}
                       left1 = {props.pages.tit[1]}

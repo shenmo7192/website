@@ -82,14 +82,18 @@ const url0 = [
   "INDEX",
   "BLOCK",
   "DISCUSS",
-  "中文"
+  "DONATE",
+  "中文",
+  "More",
 ]
 const url1 = [
   "星火商店",
   "目录",
   "板块",
   "讨论",
-  "English"
+  "捐赠",
+  "English",
+  "展开",
 ]
 
 let b11 =<h1 className="title2" style={{ textAlign: 'center'   }}>关于<font style={{color:"#3787ff"}}>我们</font></h1>;
@@ -156,5 +160,11 @@ let m3= <a href="/Donate/">
                 width:"100%",
               }}/>
         </a>;
+const home = ["星火商店"];
+const donate = ["捐助我们"];
+const home2 = ["Spark Store"];
+const donate2 = ["Donate us"];
+const html_title = [home,donate];
+const html_title2 = [home2,donate2];
 const img = [m1,m2,m3];
-export { contents, url0, url1 ,title,bottom,bottom2,img};
+export { contents, url0, url1 ,title,bottom,bottom2,img,html_title,html_title2};
