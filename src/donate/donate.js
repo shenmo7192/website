@@ -13,6 +13,14 @@ function Donate(props) {
                       img={item[2]}/>)
             }
             {
+                  props.pages.content.map(
+                    (item,idx) => <Blocktop key={idx}
+                      title={item[0]}
+                      left1={item[1]}
+                      img={item[2]}/>)
+            }
+
+            {
                   props.pages.bot.map(
                     (item,idx) => <Block key={idx}
                       title={item[0]}

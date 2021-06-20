@@ -28,7 +28,7 @@ function Carousel(props) {
     start();
     return () => clearInterval(timer.current);
   }, [start]);
-
+  
 
   return (
     <div className="wow fadeInDown Box" data-wow-duration="2s" data-wow-delay="0s">
@@ -44,6 +44,24 @@ function Carousel(props) {
           </div>
         ))
       }
+      <div style={{textAlign:"center"}}>
+          {
+            data.map((_item,index)=>(
+                <button key={uuid()}
+                    style={{
+                      backgroundColor: index === active ? 'gray' :'white'
+                    }}
+                    onClick={()=>{
+                      setActive(() => {
+                        return index;
+                      });
+                    }
+                    }
+                />
+             )
+             )
+          }
+      </div>
     </div>
   );
 }
