@@ -23,7 +23,7 @@ function App(){
         tit:title,
         bot:bottom,
         pic:img,
-        html_title:html_title
+        html_title:html_title2
       })
     }else{
       setContent({
@@ -33,7 +33,7 @@ function App(){
         tit: title,
         bot:bottom2,
         pic:img,
-        html_title:html_title2
+        html_title:html_title
       }
       )
     }

@@ -138,14 +138,14 @@ const bottom2 = [[b21,b22,b23],
                 [b11,b12,b13],
           ];
 let m1=<img border="0" 
-              src={require("../imags/02.svg")}
+              src={require("../imags/background1.png")}
               alt="sss"
               style={{
                 height:"100%",
                 width:"100%",
               }}/>;
 let m2=<img border="0" 
-              src={require("../imags/03.svg")}
+              src={require("../imags/background2.png")}
               alt="sss"
               style={{
                 height:"100%",
@@ -153,7 +153,7 @@ let m2=<img border="0"
               }}/>;
 let m3= <a href="/Donate/">
   <img border="0" 
-              src={require("../imags/04.svg")}
+              src={require("../imags/background3.png")}
               alt="sss"
               style={{
                 height:"100%",
