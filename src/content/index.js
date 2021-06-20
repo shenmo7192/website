@@ -25,7 +25,7 @@ let title_contant = <div>
                   
                     <div className="modal-content">
                       <span className="close" onClick={pop_video_close}>&times;</span>
-                            <video id="video" style={{width:'100%',height:'100%'}} controls autoPlay >
+                            <video id="video" style={{width:'100%',height:'100%'}} controls >
                             <source src={require("../imags/lingmeng.mp4")} type="video/mp4"/>
                             </video> 
                     </div>
@@ -147,12 +147,14 @@ let m2=<img border="0"
                 height:"100%",
                 width:"100%",
               }}/>;
-let m3=<img border="0" 
+let m3= <a href="/Donate/">
+  <img border="0" 
               src={require("../imags/04.svg")}
               alt="sss"
               style={{
                 height:"100%",
                 width:"100%",
-              }}/>;
+              }}/>
+        </a>;
 const img = [m1,m2,m3];
 export { contents, url0, url1 ,title,bottom,bottom2,img};

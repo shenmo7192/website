@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import wow from 'wowjs';
 
-new wow.WOW().init();
+new wow.WOW({live:false}).init();
 ReactDOM.render(
   <React.StrictMode>
     <App />

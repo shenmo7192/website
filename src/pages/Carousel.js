@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import './animate.css'
+import './animate.css';
+import './Carousel.css';
+import {v1 as uuid} from 'uuid'
 function Carousel(props) {
   const { data = [], time } = props;
   const [active, setActive] = useState(0);
@@ -29,16 +31,16 @@ function Carousel(props) {
 
 
   return (
-    <div className="wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s"  style={{width:"40%",textAlign:'center',marginLeft:'30%',marginRight:'30%',marginTop:70,float:'left'}}>
+    <div className="wow fadeInDown Box" data-wow-duration="2s" data-wow-delay="0s">
       {
-        data.map((item, index) => (
+        data.map((item,index) => (
           <div
-            key={item}
+            key={uuid()}
             style={{ color: index === active ? 'red' : 'green',
                     display: index === active ? 'block': 'none'
                   }}
           >
-            <div>{item}</div>
+            <div className="box1">{item}</div>
           </div>
         ))
       }
@@ -47,7 +49,7 @@ function Carousel(props) {
 }
 
 Carousel.defaultProps = {
-  time: 2000, // 轮播时间 ms
+  time: 3200, // 轮播时间 ms
   data: ['第一个', '第二个', '第三个'],
 };
 
