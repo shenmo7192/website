@@ -35,7 +35,7 @@ p {
     }
 }
 
-ul {
+.ul_top {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -46,11 +46,11 @@ ul {
     width: 100%;
 }
 
-li {
+.lead {
     float: right;
 }
 
-li a {
+.lead a {
     display: block;
     color: black;
     text-align: center;
@@ -58,11 +58,11 @@ li a {
     text-decoration: none;
 }
 
-li:hover {
+.lead:hover {
     cursor: pointer;
 }
 
-li a:hover:not(.active) {
+.lead a:hover:not(.active) {
     cursor: pointer;
     background-color: #ffffffce;
     color: gray;
