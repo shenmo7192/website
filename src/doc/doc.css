@@ -1,0 +1,9 @@
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    float: right;
+    width: 20%;
+    overflow: scroll;
+    height: 90%;
+}

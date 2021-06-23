@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react';
 import ReactMarkdown from 'react-markdown';
-import file from './md/chapter_2.md';
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import gfm from 'remark-gfm';
 import MarkdownNavbar from 'markdown-navbar';
@@ -10,7 +9,10 @@ import 'markdown-navbar/dist/navbar.css';
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import 'katex/dist/katex.min.css' // `rehype-katex` does not import the CSS for you
-export default function Doc() {
+Doc.defaultProps = {
+  file:require("./md/chapter_3.md"),
+};
+export default function Doc(props) {
   const components = {
   code({node, inline, className, children, ...props}) {
     const match = /language-(\w+)/.exec(className || '')
@@ -24,14 +26,27 @@ export default function Doc() {
   }
 };
   const [markdown, setMarkdown] = useState("");
-  const [height , setheight] = useState(0);
+  const [style , setstyle] = useState({
+    float:'right',
+    width:"20%",
+    position:"absolute",
+    overflow:"scroll",
+    height:"90%",
+    marginTop:0
+  });
   function handleScroll(){
-    setheight(window.pageYOffset);
-    console.log(window.pageYOffset);
+    setstyle({
+      float:'right',
+      width:"20%",
+      position:"absolute",
+      overflow:"scroll",
+      height:"90%",
+      marginTop:window.pageYOffset
+    });
   }
   useEffect(() => {
     window.addEventListener('scroll', handleScroll,true);
-    fetch(file)
+    fetch(props.file)
       .then((res) => res.text())
       .then((text) => setMarkdown(text));
     return () => {
@@ -47,7 +62,7 @@ export default function Doc() {
       components={components} remarkPlugins={[gfm,remarkMath]} children={markdown} />
 
     </div>
-      <div  style={{float:'right',width:"20%", position:"absolute",overflow:"scroll",height:"90%",marginTop:{height}}}>
+      <div style={style}>
         <MarkdownNavbar source={markdown} />
       </div>
     </div>

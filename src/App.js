@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react';
 import { BrowserRouter as Router,Route,Redirect,Switch} from 'react-router-dom';
 import Window from './home/window';
 import Donate from './donate/donate';
-import Doc from './doc/doc';
+import Mydoc from './doc/mydoc';
 import './styles/styles.css';
 import {contents ,url0, url1,title,bottom, bottom2,img,html_title,html_title2 }from './content/';
 function App(){
@@ -69,6 +69,7 @@ function App(){
                 <ul className="ul_top">
                     <li className="lead" onClick={setEnglish}><a>{content.url[5]}</a></li>
                     <li className="lead"><a href="/Donate/">{content.url[4]}</a></li>
+                    <li className="lead"><a href="/Doc/">{content.url[7]}</a></li>
                     <li className="lead"><a href="https://www.deepinos.org">{content.url[2]}</a></li>
                     <li className="lead"><a href="https://www.deepinos.org">{content.url[3]}</a></li>
                     <li className="top-logo lead"><a href="/Home/">{content.url[0]}</a></li>
@@ -84,6 +85,7 @@ function App(){
                         <a href="index.html">{content.url[1]}</a>
                         <a href="https://www.deepinos.org">{content.url[2]}</a>
                         <a href="https://www.deepinos.org">{content.url[3]}</a>
+                        <a href="/Doc/">{content.url[7]}</a>
                         <a href="/Donate/">{content.url[4]}</a>
                         <a className="dropbtn2" onClick={setEnglish}>{content.url[5]}</a>
                     </div>
@@ -101,7 +103,7 @@ function App(){
         <Donate pages={content}/>
       </Route>
     <Route path="/Doc">
-        <Doc/>
+        <Mydoc/>
       </Route>
       <Redirect exact to="/Home" from='*' />
     </Switch>

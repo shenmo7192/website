@@ -85,6 +85,7 @@ const url0 = [
   "DONATE",
   "中文",
   "More",
+  "Doc"
 ]
 const url1 = [
   "星火商店",
@@ -94,6 +95,7 @@ const url1 = [
   "捐赠",
   "English",
   "展开",
+  "文档"
 ]
 
 let b11 =<h1 className="title2" style={{ textAlign: 'center'   }}>关于<font style={{color:"#3787ff"}}>我们</font></h1>;
