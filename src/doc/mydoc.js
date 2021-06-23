@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import { BrowserRouter as Router,Route,Redirect,Switch} from 'react-router-dom';
 import Doc from './doc';
 import { menu } from './menu'; 
 
-function Mydoc(){
+function Mydoc({pages}){
+  useEffect(()=>{
+    document.title=pages.html_title[2]
+  } ,[pages]);
   return <Router>
     <Switch>
       <Route path="/Doc/SUMMARY">

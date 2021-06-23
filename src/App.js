@@ -103,7 +103,7 @@ function App(){
         <Donate pages={content}/>
       </Route>
     <Route path="/Doc">
-        <Mydoc/>
+        <Mydoc pages={content} />
       </Route>
       <Redirect exact to="/Home" from='*' />
     </Switch>

@@ -164,9 +164,11 @@ let m3= <a href="/Donate/">
         </a>;
 const home = ["星火商店"];
 const donate = ["捐助我们"];
+const doc = ["星火文档"];
 const home2 = ["Spark Store"];
 const donate2 = ["Donate us"];
-const html_title = [home,donate];
-const html_title2 = [home2,donate2];
+const doc2 = ["Spark Document"];
+const html_title = [home,donate,doc];
+const html_title2 = [home2,donate2,doc2];
 const img = [m1,m2,m3];
 export { contents, url0, url1 ,title,bottom,bottom2,img,html_title,html_title2};
