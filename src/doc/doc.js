@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import ReactMarkdown from 'react-markdown';
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import gfm from 'remark-gfm';
-import MarkdownNavbar from 'markdown-navbar';
+//import MarkdownNavbar from 'markdown-navbar';
 // The default style of markdown-navbar should be imported additionally
 import 'markdown-navbar/dist/navbar.css';
 
@@ -26,45 +26,45 @@ export default function Doc(props) {
   }
 };
   const [markdown, setMarkdown] = useState("");
-  const [style , setstyle] = useState({
-    float:'right',
-    width:"20%",
-    position:"absolute",
-    overflow:"scroll",
-    height:"90%",
-    marginTop:0
-  });
-  function handleScroll(){
-    setstyle({
-      float:'right',
-      width:"20%",
-      position:"absolute",
-      overflow:"scroll",
-      height:"90%",
-      marginTop:window.pageYOffset
-    });
-  }
+  //const [style , setstyle] = useState({
+  //  float:'right',
+  //  width:"20%",
+  //  position:"absolute",
+  //  overflow:"scroll",
+  //  height:"90%",
+  //  marginTop:0
+  //});
+  //function handleScroll(){
+  //  setstyle({
+  //    float:'right',
+  //    width:"20%",
+  //    position:"absolute",
+  //    overflow:"scroll",
+  //    height:"90%",
+  //    marginTop:window.pageYOffset
+  //  });
+  //}
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll,true);
+    //window.addEventListener('scroll', handleScroll,true);
     fetch(props.file)
       .then((res) => res.text())
       .then((text) => setMarkdown(text));
-    return () => {
-      window.removeEventListener('scroll', handleScroll,true);
-    }
+    //return () => {
+    //  window.removeEventListener('scroll', handleScroll,true);
+    //}
   }, []);
 
   return (
-    <div className="App" style={{marginTop:70}}>
-    <div style={{float:"left",width:"60%",marginLeft:"20%"}}>
+    <div className="App" id="main" style={{height:'calc(90vh)',width:'100%',marginTop:70,float:'right',overflow:'scroll'}}>
+    <div style={{float:"left",width:"100%"}}>
       <ReactMarkdown 
       rehypePlugins={[rehypeKatex]}
       components={components} remarkPlugins={[gfm,remarkMath]} children={markdown} />
 
     </div>
-      <div style={style}>
+    {/*<div style={style}>
         <MarkdownNavbar source={markdown} />
-      </div>
+      </div>*/}
     </div>
   );
 }
