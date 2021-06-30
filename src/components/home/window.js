@@ -8,7 +8,7 @@ function Window({pages}) {
     document.title=pages.html_title[0]
   },[pages]);
   //add props to useEffect,when the page is used, it will do this
-  return <div>
+  return <>
             <Block title ={pages.tit[0]}
                       left1 = {pages.tit[1]}
                       img = {pages.tit[2]}/>
@@ -28,7 +28,7 @@ function Window({pages}) {
             }
 
   <Core/>
-        </div>
+        </>
 }
 
 export default Window;

@@ -1,6 +1,5 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: '星火商店官方网站',
@@ -28,6 +27,11 @@ module.exports = {
         },
         {
           to: '/blog', 
+          label: 'Blog', 
+          position: 'left'
+        },
+        {
+          to: '/Donate', 
           label: 'Blog', 
           position: 'left'
         },

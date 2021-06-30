@@ -49,7 +49,7 @@ function Carousel(props) {
             data.map((_item,index)=>(
                 <button key={uuid()}
                     style={{
-                      backgroundColor: index === active ? 'gray' :'white'
+                      backgroundColor: index === active ? 'gray' :'rgba(255,255,255,0)'
                     }}
                     onClick={()=>{
                       setActive(() => {
