@@ -20,10 +20,9 @@ module.exports = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Tutorial',
+          to: '/Donate', 
+          label: 'Donate', 
+          position: 'left'
         },
         {
           to: '/blog', 
@@ -31,9 +30,10 @@ module.exports = {
           position: 'left'
         },
         {
-          to: '/Donate', 
-          label: 'Blog', 
-          position: 'left'
+          type: 'doc',
+          docId: 'intro',
+          position: 'left',
+          label: 'Tutorial',
         },
         {
           type: 'localeDropdown',

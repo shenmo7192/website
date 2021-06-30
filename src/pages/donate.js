@@ -3,7 +3,7 @@ import Donate from '../components/donate/donate';
 import '../css/styles.css'
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import {contents ,url0, url1,title,bottom, bottom2,img,html_title,html_title2 }from '../components/content/';
+import {contents ,url0, url1,title,bottom3,img,html_title,html_title2 }from '../components/content/';
 import wow from 'wowjs';
 function donate(){
   new wow.WOW({live:false}).init();
@@ -13,7 +13,7 @@ function donate(){
     url: url0,
     english : false,
     tit: title,
-    bot: bottom,
+    bot: bottom3,
     pic:img,
     html_title:html_title
   });
@@ -50,7 +50,7 @@ function donate(){
         content : contents,
         url:url1,
         tit: title,
-        bot:bottom,
+        bot:bottom3,
         pic:img,
         html_title:html_title
       });
@@ -60,7 +60,7 @@ function donate(){
         content : contents,
         url:url0,
         tit:title,
-        bot:bottom2,
+        bot:bottom3,
         pic:img,
         html_title:html_title2
       })

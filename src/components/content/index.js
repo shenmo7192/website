@@ -5,6 +5,7 @@ import Threesvg from '@site/static/img/03.svg';
 import Foursvg from '@site/static/img/04.svg';
 import Fifthsvg from '@site/static/img/05.svg';
 import Sixsvg from '@site/static/img/06.svg';
+import Sevensvg from '@site/static/img/07.svg';
 import './content.css'
 function jump(){
   window.location.href = "https://www.baidu.com";
@@ -110,6 +111,19 @@ const bottom = [[b11,b12,b13],
 const bottom2 = [[b21,b22,b23],
                 [b11,b12,b13],
           ];
+let b31 =<h1 className="title2" style={{ textAlign: 'center'   }}>赞助<font style={{color:"#3787ff"}}>我们</font></h1>;
+let b32= <div>
+          <div style={{ textAlign: 'center'}}>
+          <button><span>爱发电</span></button>
+          </div>
+          <div style={{ textAlign: 'center'}}>
+          <button><span>收支明细</span></button>
+          </div>
+          </div>;
+let b33=<Sevensvg style={{height:"100%",width:"100%"}}/>;
+const bottom3 = [[b31,b32,b33],
+                 [b31,b32,b33]
+                ];
 let m1=<img border="0" 
               src={require("@site/static/img/background1.png").default}
               alt="ssssss"
@@ -142,4 +156,4 @@ const doc2 = ["Spark Document"];
 const html_title = [home,donate,doc];
 const html_title2 = [home2,donate2,doc2];
 const img = [m1,m2,m3];
-export { contents, url0, url1 ,title,bottom,bottom2,img,html_title,html_title2};
+export { contents, url0, url1 ,title,bottom,bottom2,bottom3,img,html_title,html_title2};
