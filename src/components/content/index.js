@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
 import Onesvg from '@site/static/img/01.svg';
 import Twosvg from '@site/static/img/02.svg';
 import Threesvg from '@site/static/img/03.svg';
@@ -40,14 +41,7 @@ let title_contant = <div>
                   </div>
                     </div>
                     <div style={{ textAlign: 'center'}}>
-                    <button 
-                        className="button2"  
-                        onClick={
-                          ()=>{
-                            window.location.href = "/spark-store-website/Timeline";
-                          }
-                        }
-                    ><span>更新记录</span></button>
+                    <button className="button2"><span><Link to="/spark-store-website/Timeline">更新记录</Link></span></button>
                     </div>
                     <div style={{ textAlign: 'center'}}>
                     <button onClick={jump}><span>下载体验</span></button>

@@ -23,6 +23,11 @@ button span {
     transition: 0.5s;
 }
 
+button span a {
+    color: black;
+    text-decoration: none;
+}
+
 h1 {
     font-size: 35px;
     font-family: 'Light';
