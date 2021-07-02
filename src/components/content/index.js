@@ -40,7 +40,14 @@ let title_contant = <div>
                   </div>
                     </div>
                     <div style={{ textAlign: 'center'}}>
-                    <button className="button2"><span>更新记录</span></button>
+                    <button 
+                        className="button2"  
+                        onClick={
+                          ()=>{
+                            window.location.href = "/spark-store-website/Timeline";
+                          }
+                        }
+                    ><span>更新记录</span></button>
                     </div>
                     <div style={{ textAlign: 'center'}}>
                     <button onClick={jump}><span>下载体验</span></button>
@@ -121,8 +128,21 @@ let b32= <div>
           </div>
           </div>;
 let b33=<Sevensvg style={{height:"100%",width:"100%"}}/>;
+let b41 =<h1 className="title2" style={{ textAlign: 'center'   }}>加入<font style={{color:"#3787ff"}}>我们</font></h1>;
+let b42= <div>
+          <div style={{ textAlign: 'center'}}>
+            <p>我们需要你的帮助,你会的任何技术都能帮上我们</p>
+          </div>
+          <div style={{ textAlign: 'center'}}>
+          <button><span>qq群</span></button>
+          </div>
+          <div style={{ textAlign: 'center'}}>
+          <button><span>投递软件</span></button>
+          </div>
+          </div>;
+let b43=<Sevensvg style={{height:"100%",width:"100%"}}/>;
 const bottom3 = [[b31,b32,b33],
-                 [b31,b32,b33]
+                 [b41,b42,b43]
                 ];
 let m1=<img border="0" 
               src={require("@site/static/img/background1.png").default}
@@ -149,11 +169,15 @@ let m3= <a href="/Donate/">
         </a>;
 const home = ["星火商店"];
 const donate = ["捐助我们"];
-const doc = ["星火文档"];
+const time = ["更新记录"];
 const home2 = ["Spark Store"];
 const donate2 = ["Donate us"];
-const doc2 = ["Spark Document"];
-const html_title = [home,donate,doc];
-const html_title2 = [home2,donate2,doc2];
+const time2 = ["Timeline"];
+const html_title = [home,donate,time];
+const html_title2 = [home2,donate2,time2];
 const img = [m1,m2,m3];
-export { contents, url0, url1 ,title,bottom,bottom2,bottom3,img,html_title,html_title2};
+const timeline = [["2016","sssss"],
+                  ["2017","sssss"],
+                  ["2018","sssss"],
+                  ]
+export { contents, url0, url1 ,title,bottom,bottom2,bottom3,img,html_title,html_title2,timeline};

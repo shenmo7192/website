@@ -15,6 +15,10 @@
     "message": "Donate",
     "description": "Navbar item with label Donate"
   },
+  "item.label.Timeline": {
+    "message": "Timeline",
+    "description": "Navbar item with label Timeline"
+  },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"

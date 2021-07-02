@@ -15,6 +15,10 @@
     "message": "捐赠",
     "description": "Navbar item with label Donate"
   },
+  "item.label.Timeline": {
+    "message": "时间线",
+    "description": "Navbar item with label Timeline"
+  },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"

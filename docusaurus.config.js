@@ -2,6 +2,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
+  plugins: ['docusaurus-plugin-sass'],
   title: '星火商店官方网站',
   tagline: '星火商店是Linux系统下的一款应用商店',
   url: 'https://metanoia1989.github.io',  
@@ -22,6 +23,11 @@ module.exports = {
         {
           to: '/Donate', 
           label: 'Donate', 
+          position: 'left'
+        },
+        {
+          to: '/Timeline', 
+          label: 'Timeline', 
           position: 'left'
         },
         {
