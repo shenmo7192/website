@@ -1,4 +1,5 @@
 import React from 'react';
+import Translate  from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
 import Onesvg from '@site/static/img/01.svg';
 import Twosvg from '@site/static/img/02.svg';
@@ -22,7 +23,7 @@ function pop_video_close(){
   video.pause();
 }
 let title_title = <div style={{ textAlign: 'center'   }}>
-                      <h1 >Spark Store</h1>
+                      <h1 ><Translate>Spark Store</Translate></h1>
                       <h1 className="title2">指尖一触，即是万物</h1>
                   </div>;
 let title_contant = <div>
@@ -41,7 +42,7 @@ let title_contant = <div>
                   </div>
                     </div>
                     <div style={{ textAlign: 'center'}}>
-                    <button className="button2"><span><Link to="/spark-store-website/Timeline">更新记录</Link></span></button>
+                    <button className="button2"><span><Link to="/Timeline">更新记录</Link></span></button>
                     </div>
                     <div style={{ textAlign: 'center'}}>
                     <button onClick={jump}><span>下载体验</span></button>
@@ -163,7 +164,7 @@ let m3= <a href="/Donate/">
         </a>;
 const home = ["星火商店"];
 const donate = ["捐助我们"];
-const time = ["更新记录"];
+const time = [<Translate>更新记录</Translate>];
 const home2 = ["Spark Store"];
 const donate2 = ["Donate us"];
 const time2 = ["Timeline"];

@@ -10,9 +10,7 @@ function Time({pages}){
     <ul>
     {
       pages.content.map(
-        (item,idx) => {
-          console.log("test");
-          return <li key={idx}>
+        (item,idx) => <li key={idx}>
             <div className="content">
             <h2>
               <time>{item[0]}</time>
@@ -20,7 +18,6 @@ function Time({pages}){
             <p> {item[1]}</p>
           </div>
             </li>
-        }
       )
     }
     </ul>

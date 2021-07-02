@@ -162,5 +162,11 @@
   "theme.common.skipToMainContent": {
     "message": "跳过主要内容",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "Spark Store": {
+    "message": "Spark Store"
+  },
+  "更新记录": {
+    "message": "更新记录"
   }
 }
