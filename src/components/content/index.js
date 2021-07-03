@@ -1,5 +1,5 @@
 import React from 'react';
-import Translate  from '@docusaurus/Translate';
+import Translate ,{translate} from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
 import Onesvg from '@site/static/img/01.svg';
 import Twosvg from '@site/static/img/02.svg';
@@ -42,7 +42,7 @@ let title_contant = <div>
                   </div>
                     </div>
                     <div style={{ textAlign: 'center'}}>
-                    <button className="button2"><span><Link to="/Timeline"><Translate>Timeline</Translate></Link></span></button>
+                    <button className="button2"><span><Link to="/timeline"><Translate>Timeline</Translate></Link></span></button>
                     </div>
                     <div style={{ textAlign: 'center'}}>
                     <button onClick={jump}><span><Translate>Download</Translate></span></button>
@@ -63,32 +63,13 @@ const contents = [[a01,a02,a03],
                   [a11,a12,a13],
                   [a21,a22,a23],
           ];
-const url0 = [
-  "Spark store",
-  "INDEX",
-  "BLOCK",
-  "DISCUSS",
-  "DONATE",
-  "中文",
-  "More",
-  "Doc"
-]
-const url1 = [
-  "星火商店",
-  "目录",
-  "板块",
-  "讨论",
-  "捐赠",
-  "English",
-  "展开",
-  "文档"
-]
+
 
 let b11 =<h1 className="title2" style={{ textAlign: 'center'   }}>关于<font style={{color:"#3787ff"}}>我们</font></h1>;
-let b12=<div>
+let b12=<>
           <p>有shenmo发起的星火商店致力于丰富linux生态，取"星星之火，可以燎原"之一，组建了星火应用商店。我们是个年轻的团队，大部分成员是00后，有小学生，中学生，大学生，来自五湖四海。</p>
           <p>尽管我们年龄不同，资历不同，但是我们努力建设linux生提啊的目标是相同的。我们有信心，也有勇气向着我们共同目标不断前进</p>
-          </div>
+          </>
 let b13=<Fifthsvg style={{height:"100%",width:"100%"}}/>;
 let b21 =<h1 className="title2" style={{ textAlign: 'center'   }}>下载<font style={{color:"#3787ff"}}>中心</font></h1>;
 let b22= <div>
@@ -162,11 +143,13 @@ let m3= <a href="/Donate/">
                 width:"100%",
               }}/>
         </a>;
-const home = ["星火商店"];
-const donate = ["捐助我们"];
-const time = [<Translate>更新记录</Translate>];
-const home2 = ["Spark Store"];
-const donate2 = ["Donate us"];
+const home = translate({message:'Spark Store'});
+const donate = translate({message:'Donate us'});
+const time = translate({message:'Timeline'});
+const home2 = translate({
+                  message:'Spark Store',
+              });
+const donate2 = translate({message:'Donate us'});
 const time2 = ["Timeline"];
 const html_title = [home,donate,time];
 const html_title2 = [home2,donate2,time2];
@@ -175,4 +158,4 @@ const timeline = [["2016","sssss"],
                   ["2017","sssss"],
                   ["2018","sssss"],
                   ]
-export { contents, url0, url1 ,title,bottom,bottom2,bottom3,img,html_title,html_title2,timeline};
+export { contents, title,bottom,bottom2,bottom3,img,html_title,html_title2,timeline};

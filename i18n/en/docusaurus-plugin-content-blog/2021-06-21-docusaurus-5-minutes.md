@@ -91,17 +91,6 @@ Blog supports the directory tree on the right, but it is OK to use the form of '
 Markdown syntax support
 ---------------
 
-###Links links
-
-```markdown
-Look at the markdown file I created
-Let's see how to [my react page](/my-react-page).
-```
-
-Look at the markdown file I created
-
-Let's see how to [my react page](/my-react-page).
-
 ###Images
 
 The resources of the big logo image path `/static/img/dalogo.png',' static 'directory resources will be packaged and put into the root directory, and the direct absolute path reference can be used.

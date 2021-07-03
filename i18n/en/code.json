@@ -28,7 +28,7 @@
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
+    "message": "{readingTime} min read",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.tags.tagsListLabel": {
@@ -60,7 +60,7 @@
     "description": "The title of the tag list page"
   },
   "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
+    "message": "{count} posts",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
@@ -166,9 +166,6 @@
   "Spark Store": {
     "message": "Spark Store"
   },
-  "更新记录": {
-    "message": "TimeLine"
-  },
   "With a touch, Get anything": {
     "message": "With a touch, Get anything"
   },
@@ -180,5 +177,8 @@
   },
   "Download": {
     "message": "Download"
+  },
+  "Donate us": {
+    "message": "Donate us"
   }
 }

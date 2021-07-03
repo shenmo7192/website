@@ -21,12 +21,12 @@ module.exports = {
       },
       items: [
         {
-          to: '/Donate', 
+          to: '/donate', 
           label: 'Donate', 
           position: 'left'
         },
         {
-          to: '/Timeline', 
+          to: '/timeline', 
           label: 'Timeline', 
           position: 'left'
         },

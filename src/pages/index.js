@@ -1,20 +1,21 @@
-import React,{useEffect, useState} from 'react';
+import React from 'react';
 import Window from '../components/home/window';
 import '../css/styles.css'
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import {contents ,url0, url1,title,bottom, bottom2,img,html_title,html_title2 }from '../components/content/';
+import {contents ,title,bottom,img,html_title}from '../components/content/';
+//import wow from 'wowjs';
 function Home(){
+  //new wow.WOW().init();
   const {siteConfig} = useDocusaurusContext();
-  const [content,setContent] = useState({
+  const content={
     content : contents,
-    url: url0,
     english : false,
     tit: title,
     bot: bottom,
     pic:img,
     html_title:html_title
-  });
+  };
   //function setEnglish(){
   //  if (content.english===false) {
   //    setContent({
@@ -40,30 +41,28 @@ function Home(){
   //  }
 
   //}
-  useEffect(()=>{       
-    var language = (navigator.browserLanguage || navigator.language).toLowerCase();
-   if(language.indexOf('zh')>-1){
-       setContent({
-        english : false,
-        content : contents,
-        url:url1,
-        tit: title,
-        bot:bottom,
-        pic:img,
-        html_title:html_title
-      });
-   }else{
-      setContent({
-        english : true,
-        content : contents,
-        url:url0,
-        tit:title,
-        bot:bottom2,
-        pic:img,
-        html_title:html_title2
-      })
-    }
-  },[setContent])
+  //useEffect(()=>{       
+  //  var language = (navigator.browserLanguage || navigator.language).toLowerCase();
+  // if(language.indexOf('zh')>-1){
+  //     setContent({
+  //      english : false,
+  //      content : contents,
+  //      tit: title,
+  //      bot:bottom,
+  //      pic:img,
+  //      html_title:html_title
+  //    });
+  // }else{
+  //    setContent({
+  //      english : true,
+  //      content : contents,
+  //      tit:title,
+  //      bot:bottom2,
+  //      pic:img,
+  //      html_title:html_title2
+  //    })
+  //  }
+  //},[setContent])
   return     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
