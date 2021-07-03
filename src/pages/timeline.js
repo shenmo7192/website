@@ -57,6 +57,7 @@ function Timeline(){
   return     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
+    {/*上面的是工具定义的导航栏，Time是引用的dom*/}
         <Time pages={content}/>
        </Layout>
 }
