@@ -4,9 +4,7 @@ import '../css/styles.css'
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {contents ,url0, url1,title,bottom3,img,html_title,html_title2 }from '../components/content/';
-import wow from 'wowjs';
 function donate(){
-  new wow.WOW({live:false}).init();
   const {siteConfig} = useDocusaurusContext();
   const [content,setContent] = useState({
     content : contents,

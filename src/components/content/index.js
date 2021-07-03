@@ -24,12 +24,12 @@ function pop_video_close(){
 }
 let title_title = <div style={{ textAlign: 'center'   }}>
                       <h1 ><Translate>Spark Store</Translate></h1>
-                      <h1 className="title2">指尖一触，即是万物</h1>
+                      <h1 className="title2"><Translate>With a touch, Get anything</Translate></h1>
                   </div>;
 let title_contant = <div>
 
                     <div style={{ textAlign: 'center'}}>
-                    <button className="button1" onClick={pop_video}><span>介绍视频</span></button>
+                    <button className="button1" onClick={pop_video}><span><Translate>Our video</Translate></span></button>
                     <div id="myModal" className="modal">
                   
                     <div className="modal-content">
@@ -42,10 +42,10 @@ let title_contant = <div>
                   </div>
                     </div>
                     <div style={{ textAlign: 'center'}}>
-                    <button className="button2"><span><Link to="/Timeline">更新记录</Link></span></button>
+                    <button className="button2"><span><Link to="/Timeline"><Translate>Timeline</Translate></Link></span></button>
                     </div>
                     <div style={{ textAlign: 'center'}}>
-                    <button onClick={jump}><span>下载体验</span></button>
+                    <button onClick={jump}><span><Translate>Download</Translate></span></button>
                     </div>
                     </div>;
 

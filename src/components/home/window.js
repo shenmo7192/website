@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import Core from '../chat/core'
 import Block from '../pages/blocks'
 import Blocktop from '../pages/blockstop'
 function Window({pages}) {
@@ -27,7 +26,6 @@ function Window({pages}) {
                       img={item[2]}/>)
             }
 
-  <Core/>
         </>
 }
 

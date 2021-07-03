@@ -4,9 +4,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {html_title,timeline}from '../components/content/';
 import Time from '../components/timeline/';
-import wow from 'wowjs';
 function Timeline(){
-  new wow.WOW({live:false}).init();
   const {siteConfig} = useDocusaurusContext();
   const [content,setContent] = useState({
     content : timeline,

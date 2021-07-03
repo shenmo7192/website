@@ -89,16 +89,6 @@ Markdown语法支持
 ---------------
 
 
-### Links 链接
-
-```markdown 
-看看我创建的Markdown文件 [Markdown Page](/markdown-page).
-Let's see how to [my react page](/my-react-page).
-```
-
-看看我创建的Markdown文件 [Markdown Page](/markdown-page).
-Let's see how to [my react page](/my-react-page).
-
 
 ### 图片 Images 
 
