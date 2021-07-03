@@ -6,8 +6,7 @@ function Donate({pages}) {
     document.title=pages.html_title[1];
   },[pages])
   return <div style={{float:'left'}}>
-            <Carousel data ={pages.pic}/>
-            <p>&nbsp;</p>
+            <Carousel data ={pages.pic} />
               <hr/>
             <p style={{textAlign:'center',fontSize:30}}>{pages.html_title[1]}</p>
             <hr/>
