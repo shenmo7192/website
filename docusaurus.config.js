@@ -6,7 +6,7 @@ module.exports = {
   title: '星火商店官方网站',
   tagline: '星火商店是Linux系统下的一款应用商店',
   url: 'https://metanoia1989.github.io',  
-  baseUrl: '/spark-store-website/',
+  baseUrl: '/sownext/',
   favicon: 'img/favicon.ico',
   organizationName: 'metanoia1989', // Usually your GitHub org/user name.
   projectName: 'spark-store-website', // Usually your repo name.
@@ -46,7 +46,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/metanoia1989/spark-store-website',
+          href: 'https://github.com/chen244/sownext',
           label: 'GitHub',
           position: 'right',
         },

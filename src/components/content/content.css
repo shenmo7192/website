@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Light';
+    src: url("../fonts//Comfortaa-Light.ttf")
+}
+
 button {
     background-color: white;
     /* Green */

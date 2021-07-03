@@ -50,14 +50,14 @@ let title_contant = <div>
                     </div>;
 
 let title_image=<Onesvg style={{height:"100%",width:"100%"}}/>;
-let a01 =<h1 className="title2" style={{ textAlign: 'center'   }}>开源社区的<font style={{color:"#3787ff"}}>自由</font></h1>;
-let a02=<div style={{ textAlign: 'center' }}><p>从客户端到服务端</p><p>代码全部开源，自由修改</p></div>;
+let a01 =<h1 className="title2" style={{ textAlign: 'center'   }}><Translate>Mainpage.bottom.1.1</Translate><font style={{color:"#3787ff"}}><Translate>Mainpage.bottom.1.2</Translate></font></h1>;
+let a02=<div style={{ textAlign: 'center' }}><p><Translate>Mainpage.bottom.1.3</Translate></p><p><Translate>Mainpage.bottom.1.4</Translate></p></div>;
 let a03=<Twosvg style={{height:"100%",width:"100%"}}/>;
-let a11 =<h1 className="title2" style={{ textAlign: 'center'   }}>简约美观的<font style={{color:"#3787ff"}}>界面</font></h1>;
-let a12=<div style={{textAlign:'center'}}><p>Dtk 5开发，毛玻璃侧栏</p><p>给您简约优雅的体验</p></div>;
+let a11 =<h1 className="title2" style={{ textAlign: 'center'   }}><Translate>Mainpage.bottom.2.1</Translate><font style={{color:"#3787ff"}}><Translate>Mainpage.bottom.2.2</Translate></font></h1>;
+let a12=<div style={{textAlign:'center'}}><p><Translate>Mainpage.bottom.2.3</Translate></p><p><Translate>Mainpage.bottom.2.4</Translate></p></div>;
 let a13=<Threesvg style={{height:"100%",width:"100%"}}/>;
-let a21 =<h1 className="title2" style={{ textAlign: 'center'   }}>丰富多样的<font style={{color:"#3787ff"}}>应用</font></h1>;
-let a22=<div style={{textAlign:'center'}}><p>社区收集，真人审核上架</p><p>多而可控的应用存储</p></div>
+let a21 =<h1 className="title2" style={{ textAlign: 'center'   }}><Translate>Mainpage.bottom.3.1</Translate><font style={{color:"#3787ff"}}><Translate>Mainpage.bottom.3.2</Translate></font></h1>;
+let a22=<div style={{textAlign:'center'}}><p><Translate>Mainpage.bottom.3.3</Translate></p><p><Translate>Mainpage.bottom.3.4</Translate></p></div>
 let a23=<Foursvg style={{height:"100%",width:"100%"}}/>;
 const contents = [[a01,a02,a03],
                   [a11,a12,a13],
@@ -65,25 +65,25 @@ const contents = [[a01,a02,a03],
           ];
 
 
-let b11 =<h1 className="title2" style={{ textAlign: 'center'   }}>关于<font style={{color:"#3787ff"}}>我们</font></h1>;
+let b11 =<h1 className="title2" style={{ textAlign: 'center'   }}><Translate>About</Translate><font style={{color:"#3787ff"}}><Translate>Us</Translate></font></h1>;
 let b12=<>
-          <p>有shenmo发起的星火商店致力于丰富linux生态，取"星星之火，可以燎原"之一，组建了星火应用商店。我们是个年轻的团队，大部分成员是00后，有小学生，中学生，大学生，来自五湖四海。</p>
-          <p>尽管我们年龄不同，资历不同，但是我们努力建设linux生提啊的目标是相同的。我们有信心，也有勇气向着我们共同目标不断前进</p>
+          <p><Translate>page1.1</Translate></p>
+          <p><Translate>page1.2</Translate></p>
           </>
 let b13=<Fifthsvg style={{height:"100%",width:"100%"}}/>;
-let b21 =<h1 className="title2" style={{ textAlign: 'center'   }}>下载<font style={{color:"#3787ff"}}>中心</font></h1>;
+let b21 =<h1 className="title2" style={{ textAlign: 'center'   }}><Translate>Download2</Translate><font style={{color:"#3787ff"}}><Translate>Center</Translate></font></h1>;
 let b22= <div>
           <div style={{ textAlign: 'center'}}>
-          <button><span>sss</span></button>
+          <button><span><font style={{color:'blue'}}><Translate>Mainpage.download.1</Translate></font></span></button>
           </div>
           <div style={{ textAlign: 'center'}}>
-          <button><span>ssss</span></button>
+          <button><span><Translate>Mainpage.download.2</Translate></span></button>
           </div>
           <div style={{ textAlign: 'center'}}>
-          <button><span>gridman</span></button>
+          <button><span><Translate>Mainpage.download.3</Translate></span></button>
           </div>
           <div style={{ textAlign: 'center'}}>
-          <button><span>gridman</span></button>
+          <button><span><Translate>Mainpage.download.4</Translate></span></button>
           </div>
                     </div>;
 let b23=<Sixsvg style={{height:"100%",width:"100%"}}/>;
@@ -91,42 +91,41 @@ const title = [ title_title,title_contant,title_image ];
 const bottom = [[b11,b12,b13],
                 [b21,b22,b23],
           ];
-const bottom2 = [[b21,b22,b23],
-                [b11,b12,b13],
-          ];
-let b31 =<h1 className="title2" style={{ textAlign: 'center'   }}>赞助<font style={{color:"#3787ff"}}>我们</font></h1>;
+
+let b31 =<h1 className="title2" style={{ textAlign: 'center'   }}><Translate>Donatepage.1.title.1</Translate><font style={{color:"#3787ff"}}><Translate>Donatepage.1.title.2</Translate></font></h1>;
 let b32= <div>
           <div style={{ textAlign: 'center'}}>
-          <button><span>爱发电</span></button>
+          <button><span><Translate>Donatepage.1.content.1</Translate></span></button>
           </div>
           <div style={{ textAlign: 'center'}}>
-          <button><span>收支明细</span></button>
+          <button><span><Translate>Donatepage.1.content.2</Translate></span></button>
           </div>
           </div>;
 let b33=<Sevensvg style={{height:"100%",width:"100%"}}/>;
-let b41 =<h1 className="title2" style={{ textAlign: 'center'   }}>加入<font style={{color:"#3787ff"}}>我们</font></h1>;
+let b41 =<h1 className="title2" style={{ textAlign: 'center'   }}><Translate>Donatepage.2.title.1</Translate><font style={{color:"#3787ff"}}><Translate>Donatepage.2.title.2</Translate></font></h1>;
 let b42= <div>
           <div style={{ textAlign: 'center'}}>
-            <p>我们需要你的帮助,你会的任何技术都能帮上我们</p>
+            <p><Translate>Donatepage.2.content.1</Translate></p>
           </div>
           <div style={{ textAlign: 'center'}}>
-          <button><span>qq群</span></button>
+          <button><span><Translate>Donatepage.2.content.2</Translate></span></button>
           </div>
           <div style={{ textAlign: 'center'}}>
-          <button><span>投递软件</span></button>
+          <button><span><Translate>Donatepage.2.content.3</Translate></span></button>
           </div>
           </div>;
 let b43=<Sevensvg style={{height:"100%",width:"100%"}}/>;
 const bottom3 = [[b31,b32,b33],
                  [b41,b42,b43]
                 ];
-let m1=<img border="0" 
+let m1=<Link to="/"><img border="0" 
               src={require("@site/static/img/background1.png").default}
               alt="ssssss"
               style={{
                 height:"100%",
                 width:"100%",
-              }}/>;
+              }}/>
+        </Link>;
 let m2=<img border="0" 
               src={require("@site/static/img/background2.png").default}
               alt="sss"
@@ -134,7 +133,7 @@ let m2=<img border="0"
                 height:"100%",
                 width:"100%",
               }}/>;
-let m3= <a href="/Donate/">
+let m3= <Link to="/blog">
   <img border="0" 
               src={require("@site/static/img/background3.png").default}
               alt="sssss"
@@ -142,20 +141,14 @@ let m3= <a href="/Donate/">
                 height:"100%",
                 width:"100%",
               }}/>
-        </a>;
+        </Link>;
 const home = translate({message:'Spark Store'});
 const donate = translate({message:'Donate us'});
 const time = translate({message:'Timeline'});
-const home2 = translate({
-                  message:'Spark Store',
-              });
-const donate2 = translate({message:'Donate us'});
-const time2 = ["Timeline"];
 const html_title = [home,donate,time];
-const html_title2 = [home2,donate2,time2];
 const img = [m1,m2,m3];
 const timeline = [["2016","sssss"],
                   ["2017","sssss"],
                   ["2018","sssss"],
                   ]
-export { contents, title,bottom,bottom2,bottom3,img,html_title,html_title2,timeline};
+export { contents, title,bottom,bottom3,img,html_title,timeline};
