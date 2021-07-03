@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import Block from '../pages/blocks';
+import BlockDonate from '../pages/blocksdonate'
 import Carousel from '../pages/Carousel';
 function Donate({pages}) {
   useEffect(()=>{
@@ -13,7 +13,7 @@ function Donate({pages}) {
 
             {
                   pages.bot.map(
-                    (item,idx) => <Block key={idx}
+                    (item,idx) => <BlockDonate key={idx}
                       title={item[0]}
                       left1={item[1]}
                       img={item[2]}/>)
