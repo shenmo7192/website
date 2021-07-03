@@ -5,7 +5,7 @@ function Donate({pages}) {
   useEffect(()=>{
     document.title=pages.html_title[1];
   },[pages])
-  return <div style={{float:'left'}}>
+  return <>
             <Carousel data ={pages.pic} />
               <hr/>
             <p style={{textAlign:'center',fontSize:30}}>{pages.html_title[1]}</p>
@@ -19,7 +19,7 @@ function Donate({pages}) {
                       img={item[2]}/>)
             }
 
-        </div>
+        </>
 }
 
 export default Donate;
