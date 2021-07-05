@@ -3011,18 +3011,10 @@ babel-loader@^8.2.2:
     make-dir "^3.1.0"
     schema-utils "^2.6.5"
 
-babel-plugin-apply-mdx-type-prop@1.6.22:
+babel-plugin-apply-mdx-type-prop@1.6.22, babel-plugin-apply-mdx-type-prop@^1.6.22:
   version "1.6.22"
   resolved "https://registry.npm.taobao.org/babel-plugin-apply-mdx-type-prop/download/babel-plugin-apply-mdx-type-prop-1.6.22.tgz#d216e8fd0de91de3f1478ef3231e05446bc8705b"
   integrity sha1-0hbo/Q3pHePxR47zIx4FRGvIcFs=
-  dependencies:
-    "@babel/helper-plugin-utils" "7.10.4"
-    "@mdx-js/util" "1.6.22"
-
-babel-plugin-apply-mdx-type-prop@^1.6.22:
-  version "1.6.22"
-  resolved "https://registry.yarnpkg.com/babel-plugin-apply-mdx-type-prop/-/babel-plugin-apply-mdx-type-prop-1.6.22.tgz#d216e8fd0de91de3f1478ef3231e05446bc8705b"
-  integrity sha512-VefL+8o+F/DfK24lPZMtJctrCVOfgbqLAGZSkxwhazQv4VxPg3Za/i40fu22KR2m8eEda+IfSOlPLUSIiLcnCQ==
   dependencies:
     "@babel/helper-plugin-utils" "7.10.4"
     "@mdx-js/util" "1.6.22"

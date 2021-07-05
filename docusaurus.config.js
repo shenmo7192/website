@@ -37,7 +37,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'intro',
+          docId: 'index',
           position: 'left',
           label: 'Tutorial',
         },
@@ -95,7 +95,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Spark Store, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -110,13 +110,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/metanoia1989/spark-store-website/edit/master/',
+            'https://gitee.com/deepin-community-store/website/edit/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/metanoia1989/spark-store-website/edit/master/',
+            'https://gitee.com/deepin-community-store/website/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
