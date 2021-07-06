@@ -3,8 +3,12 @@
     "message": "星火商店",
     "description": "The title in the navbar"
   },
+  "item.label.Home": {
+    "message": "首页",
+    "description": "Navbar item with label Home"
+  },
   "item.label.Tutorial": {
-    "message": "文档",
+    "message": "教程",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Blog": {
@@ -19,8 +23,8 @@
     "message": "时间线",
     "description": "Navbar item with label Timeline"
   },
-  "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
+  "item.label.Gitee": {
+    "message": "Gitee",
+    "description": "Navbar item with label Gitee"
   }
 }

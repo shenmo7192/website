@@ -5,8 +5,8 @@ module.exports = {
   plugins: ['docusaurus-plugin-sass'],
   title: '星火商店官方网站',
   tagline: '星火商店是Linux系统下的一款应用商店',
-  url: 'https://metanoia1989.github.io',  
-  baseUrl: '/sownext/',
+  url: 'https://www.spark-app.store/',  
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'metanoia1989', // Usually your GitHub org/user name.
   projectName: 'spark-store-website', // Usually your repo name.
@@ -21,81 +21,80 @@ module.exports = {
       },
       items: [
         {
+          to: '/', 
+          label: 'Home', 
+          position: 'right'
+        },
+        {
           to: '/donate', 
           label: 'Donate', 
-          position: 'left'
+          position: 'right'
         },
         {
           to: '/timeline', 
           label: 'Timeline', 
-          position: 'left'
+          position: 'right'
         },
         {
           to: '/blog', 
           label: 'Blog', 
-          position: 'left'
+          position: 'right'
         },
         {
           type: 'doc',
           docId: 'index',
-          position: 'left',
+          position: 'right',
           label: 'Tutorial',
         },
         {
           type: 'localeDropdown',
           position: 'right',
         },
-        {
-          href: 'https://github.com/chen244/sownext',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
       copyright: `Copyright © ${new Date().getFullYear()} Spark Store, Inc. Built with Docusaurus.`,
+      // links: [
+      //   {
+      //     title: '社区协作',
+      //     items: [
+      //       {
+      //         label: 'Gitee',
+      //         href: 'https://gitee.com/deepin-community-store/website',
+      //       },
+      //       {
+      //         label: 'Rocket chat',
+      //         href: 'https://chat.spark-app.store/',
+      //       },
+      //       {
+      //         label: 'Wekan',
+      //         href: 'https://wekan.spark-app.store/',
+      //       },
+      //     ]
+      //   },
+      //   {
+      //     title: '友情链接',
+      //     items: [
+      //       {
+      //         label: '深度科技论坛',
+      //         href: 'https://bbs.deepin.org/',
+      //       },
+      //       {
+      //         label: '统信UOS社区',
+      //         href: 'https://bbs.chinauos.com/',
+      //       },
+      //       {
+      //         label: 'DOSU社区',
+      //         href: 'https://www.deepinos.org/',
+      //       },
+      //       {
+      //         label: '快点搜',
+      //         href: 'https://quickso.cn/',
+      //       }
+      //     ]
+      //   }
+      // ],
     },
     prism: {
       theme: lightCodeTheme,

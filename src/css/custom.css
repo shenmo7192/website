@@ -15,7 +15,11 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+
+  --ifm-color-primary: #3787ff;
 }
+
+
 
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
@@ -26,4 +30,30 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* 滚动条 */
+
+/* 底部 */
+
+.footer {
+  padding: calc(var(--ifm-footer-padding-vertical) * 0.6)  calc(var(--ifm-footer-padding-horizontal) * 0.5) ;
+}
+
+/* -------------------------
+   ----- Media Queries ----- 
+   ------------------------- */
+
+ @media (max-width: 996px) { 
+  .footer {
+    padding: 8px 5px;
+  }
+  .footer__links {
+    /* display: none; */
+    margin-top: 12px;
+  }
+  .footer__col {
+    margin-bottom: var(--ifm-spacing-vertical);
+  }
 }

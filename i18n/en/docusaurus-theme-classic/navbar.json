@@ -19,8 +19,8 @@
     "message": "Timeline",
     "description": "Navbar item with label Timeline"
   },
-  "item.label.GitHub": {
-    "message": "GitHub",
+  "item.label.Gitee": {
+    "message": "Gitee",
     "description": "Navbar item with label GitHub"
   }
 }
