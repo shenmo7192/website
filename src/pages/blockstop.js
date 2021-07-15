@@ -1,6 +1,6 @@
 import React from 'react';
 import './blockstop.css';
-import './animate.css';
+
 function Blocktop(props){
   return <div className="block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" 
               >

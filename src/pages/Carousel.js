@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import './animate.css';
+
 import './Carousel.css';
 import {v1 as uuid} from 'uuid'
 function Carousel(props) {
