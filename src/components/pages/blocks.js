@@ -1,8 +1,9 @@
 import React from 'react';
 import './blocks.css';
-import './animate.css'
+//import './animate.css'
 function Block(props){
-  return <div className="into  wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s" >
+  //return <div className="into  wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s" >
+  return <div className="into">
                <div id="menu" className="left" style={{
                    wordWrap:'break-word', 
                    wordBreak:'break-all',

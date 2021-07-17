@@ -1,6 +1,6 @@
 import React from 'react';
 import Block from './blocks';
-import './animate.css'
+//import './animate.css'
 import './blocksdonate.css'
 export default function BlockDonate({title,left1,img}){
   return <>
