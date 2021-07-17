@@ -22,9 +22,5 @@
   "item.label.Timeline": {
     "message": "时间线",
     "description": "Navbar item with label Timeline"
-  },
-  "item.label.Gitee": {
-    "message": "Gitee",
-    "description": "Navbar item with label Gitee"
   }
 }
