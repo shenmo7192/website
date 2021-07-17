@@ -11,7 +11,8 @@ import Sevensvg from '@site/static/img/07.svg';
 import './content.css'
 
 function jump() {
-  window.location.href = "https://www.baidu.com";
+  //下载地址
+  window.location.href = "https://gitee.com/deepin-community-store/spark-store/releases";
 }
 
 function pop_video() {
@@ -78,13 +79,13 @@ let b13 = <Fifthsvg style={{ height: "100%", width: "100%" }} />;
 let b21 = <h1 className="title2" style={{ textAlign: 'center' }}><Translate>Download2</Translate><font style={{ color: "#3787ff" }}><Translate>Center</Translate></font></h1>;
 let b22 = <div>
   <div style={{ textAlign: 'center' }}>
-    <button><span><font style={{ color: 'blue' }}><Translate>Mainpage.download.1</Translate></font></span></button>
+    <button onClick={jump}><span><font style={{ color: 'blue' }}><Translate>Mainpage.download.1</Translate></font></span></button>
   </div>
   <div style={{ textAlign: 'center' }}>
-    <button><span><Translate>Mainpage.download.2</Translate></span></button>
+    <button onClick={()=>{window.location.href="https://gitee.com/deepin-community-store/spark-store";}}><span><Translate>Mainpage.download.2</Translate></span></button>
   </div>
   <div style={{ textAlign: 'center' }}>
-    <button><span><Translate>Mainpage.download.3</Translate></span></button>
+    <button onClick={()=>{window.location.href="https://gitee.com/deepin-community-store/spark-store";}}><span><Translate>Mainpage.download.3</Translate></span></button>
   </div>
   <div style={{ textAlign: 'center' }}>
     <button><span><Translate>Mainpage.download.4</Translate></span></button>
@@ -159,9 +160,10 @@ const img = [m1, m2, m3];
 
 // 时间线配置
 const timeline = [
-  ["2016", "sssss"],
-  ["2017", "sssss"],
-  ["2018", "sssss"],
+  ["3.0", translate({message:"3.0Ver"})],
+  ["3.1", translate({message:"3.1Ver"})],
+  ["3.2", translate({message:"3.2Ver"})],
+  ["3.3", translate({message:"3.3Ver"})],
 ]
 
 export { contents, title, bottom, bottom3, img, html_title, timeline };
