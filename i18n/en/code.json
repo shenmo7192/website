@@ -275,15 +275,15 @@
     "message": "Deliver"
   },
   "3.0Ver": {
-    "message": "3.0Ver"
+    "message": "Support the function of search.\n Use gdebi."
   },
   "3.1Ver": {
-    "message": "3.1Ver"
+    "message": "Reverso the multiple branch, support download with multi thread. \n Fix the bugs of the color is not the same as your system"
   },
   "3.2Ver": {
-    "message": "3.2Ver"
+    "message": "Fix the bug that the head is abnormal on unDDE environment\nCount the number of package is downloaded with email"
   },
   "3.3Ver": {
-    "message": "3.3Ver"
+    "message": "Support the content of applications"
   }
 }
