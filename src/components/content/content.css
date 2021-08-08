@@ -14,7 +14,7 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
+    font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
@@ -44,7 +44,7 @@ h1 {
 }
 
 .title2 {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 button span:after {
