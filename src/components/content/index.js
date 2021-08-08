@@ -7,7 +7,9 @@ import Threesvg from '@site/static/img/03.svg';
 import Foursvg from '@site/static/img/04.svg';
 import Fifthsvg from '@site/static/img/05.svg';
 import Sixsvg from '@site/static/img/06.svg';
-import Sevensvg from '@site/static/img/07.svg';
+//import Sevensvg from '@site/static/img/07.svg';
+import Donate1svg from '@site/static/img/donate1.svg';
+import Donate2svg from '@site/static/img/donate2.svg';
 import './content.css'
 
 function jump() {
@@ -107,7 +109,7 @@ let b32 = <div>
     <button><span><Translate>Donatepage.1.content.2</Translate></span></button>
   </div>
 </div>;
-let b33 = <Sevensvg style={{ height: "100%", width: "100%" }} />;
+let b33 = <Donate1svg style={{ height: "100%", width: "100%" }} />;
 let b41 = <h1 className="title2" style={{ textAlign: 'center' }}><Translate>Donatepage.2.title.1</Translate><font style={{ color: "#3787ff" }}><Translate>Donatepage.2.title.2</Translate></font></h1>;
 let b42 = <div>
   <div style={{ textAlign: 'center' }}>
@@ -120,7 +122,7 @@ let b42 = <div>
     <button><span><Translate>Donatepage.2.content.3</Translate></span></button>
   </div>
 </div>;
-let b43 = <Sevensvg style={{ height: "100%", width: "100%" }} />;
+let b43 = <Donate2svg style={{ height: "100%", width: "100%" }} />;
 const bottom3 = [[b31, b32, b33],
 [b41, b42, b43]
 ];
@@ -154,8 +156,11 @@ let m3 = <Link to="/blog">
 const home = translate({ message: 'Spark Store' });
 const donate = translate({ message: 'Donate us' });
 const time = translate({ message: 'Timeline' });
+
+//配置title
 const html_title = [home, donate, time];
 
+//轮播图
 const img = [m1, m2, m3];
 
 // 时间线配置
