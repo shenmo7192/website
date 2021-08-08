@@ -10,7 +10,8 @@ function Block(props){
                }}>
                          <div id="header" style={{
                               marginLeft:'2%',
-                              marginRight:'2%'
+                              marginRight:'2%',
+                             marginTop:'20%'
                          }}>
     {/*<h1 st  ={{marginBottom:'0'}}>主要的网页标题</h1>8*/}
                              {props.title}
