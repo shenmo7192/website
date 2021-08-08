@@ -8,7 +8,7 @@ function Donate({pages}) {
   return <>
             <Carousel data ={pages.pic} />
               <hr/>
-            <p style={{textAlign:'center',fontSize:30}}>{pages.html_title[1]}</p>
+            <p style={{textAlign:'center',fontSize:30}}><strong>{pages.html_title[1]}</strong></p>
             <hr/>
 
             {
