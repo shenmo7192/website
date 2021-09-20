@@ -36,7 +36,7 @@ let title_title = <div style={{ textAlign: 'center' }}>
 
 let title_contant = <div>
   <div style={{ textAlign: 'center' }}>
-    <button className="button1" onClick={pop_video}><span><Translate>Our video</Translate></span></button>
+    <button className="button1 button_main" onClick={pop_video}><span><Translate>Our video</Translate></span></button>
     <div id="myModal" className="modal">
 
       <div className="modal-content">
@@ -49,10 +49,10 @@ let title_contant = <div>
     </div>
   </div>
   <div style={{ textAlign: 'center' }}>
-    <button className="button2"><span><Link to="/timeline"><Translate>Timeline</Translate></Link></span></button>
+    <button className="button2 button_main"><span><Link to="/timeline"><Translate>Timeline</Translate></Link></span></button>
   </div>
   <div style={{ textAlign: 'center' }}>
-    <button onClick={jump}><span><Translate>Download</Translate></span></button>
+    <button className="button_main" onClick={jump}><span><Translate>Download</Translate></span></button>
   </div>
 </div>;
 
@@ -81,16 +81,16 @@ let b13 = <Fifthsvg style={{ height: "100%", width: "100%" }} />;
 let b21 = <h1 className="title2" style={{ textAlign: 'center' }}><Translate>Download2</Translate><font style={{ color: "#3787ff" }}><Translate>Center</Translate></font></h1>;
 let b22 = <div>
   <div style={{ textAlign: 'center' }}>
-    <button onClick={jump}><span><font style={{ color: 'blue' }}><Translate>Mainpage.download.1</Translate></font></span></button>
+    <button className="button_main" onClick={jump}><span><font style={{ color: 'blue' }}><Translate>Mainpage.download.1</Translate></font></span></button>
   </div>
   <div style={{ textAlign: 'center' }}>
-    <button onClick={()=>{window.location.href="https://gitee.com/deepin-community-store/spark-store";}}><span><Translate>Mainpage.download.2</Translate></span></button>
+    <button className="button_main" onClick={()=>{window.location.href="https://gitee.com/deepin-community-store/spark-store";}}><span><Translate>Mainpage.download.2</Translate></span></button>
   </div>
   <div style={{ textAlign: 'center' }}>
-    <button onClick={()=>{window.location.href="https://gitee.com/deepin-community-store/spark-store";}}><span><Translate>Mainpage.download.3</Translate></span></button>
+    <button className="button_main" onClick={()=>{window.location.href="https://gitee.com/deepin-community-store/spark-store";}}><span><Translate>Mainpage.download.3</Translate></span></button>
   </div>
   <div style={{ textAlign: 'center' }}>
-    <button><span><Translate>Mainpage.download.4</Translate></span></button>
+    <button className="button_main"><span><Translate>Mainpage.download.4</Translate></span></button>
   </div>
 </div>;
 let b23 = <Sixsvg style={{ height: "100%", width: "100%" }} />;
@@ -103,10 +103,10 @@ const bottom = [[b11, b12, b13],
 let b31 = <h1 className="title2" style={{ textAlign: 'center' }}><Translate>Donatepage.1.title.1</Translate><font style={{ color: "#3787ff" }}><Translate>Donatepage.1.title.2</Translate></font></h1>;
 let b32 = <div>
   <div style={{ textAlign: 'center' }}>
-    <button><span><Translate>Donatepage.1.content.1</Translate></span></button>
+    <button className="button_main"><span><Translate>Donatepage.1.content.1</Translate></span></button>
   </div>
   <div style={{ textAlign: 'center' }}>
-    <button><span><Translate>Donatepage.1.content.2</Translate></span></button>
+    <button className="button_main"><span><Translate>Donatepage.1.content.2</Translate></span></button>
   </div>
 </div>;
 let b33 = <Donate1svg style={{ height: "100%", width: "100%" }} />;
@@ -116,10 +116,10 @@ let b42 = <div>
     <p><Translate>Donatepage.2.content.1</Translate></p>
   </div>
   <div style={{ textAlign: 'center' }}>
-    <button><span><Translate>Donatepage.2.content.2</Translate></span></button>
+    <button className="button_main"><span><Translate>Donatepage.2.content.2</Translate></span></button>
   </div>
   <div style={{ textAlign: 'center' }}>
-    <button><span><Translate>Donatepage.2.content.3</Translate></span></button>
+    <button className="button_main"><span><Translate>Donatepage.2.content.3</Translate></span></button>
   </div>
 </div>;
 let b43 = <Donate2svg style={{ height: "100%", width: "100%" }} />;
