@@ -1,55 +1,144 @@
-星火商店官网
-============
+# 星火应用商店官网
 
-官网地址：https://www.spark-app.store/      
-开发者：@maicss     
-网站制作管理：@chaodn @Playhi @momen @jiwangyihao @时间世界  
-UI概念设计师：@akliusizhe @qygwhk     
+星火应用商店官网各线路：
 
-使用 [Docusaurus 2](https://docusaurus.io/) 构建开发。      
+中国：https://www.spark-app.store/
+
+测试：https://test.spark-app.store/
+
+其他链接：
+
+3.0新网站设计图：https://chaodn-my.sharepoint.com/:u:/g/personal/chaodn_chaodn_tk/EVzjc7qmtwNMocYejwj_ZuUB7djHiN_xfqDsNpkydgh2_Q?e=c4rRRl
+
+欢迎UI大佬加入我们！
+
+## 团队介绍
+由深度科技论坛（bbs.deepin.org）大佬 shenmo 发起的星火工作组致力于丰富 Linux 生态，
+取“星星之火，可以燎原”之意，组建了星火应用商店。
+我们是个年轻的团队，大部分成员是 00 后，有小学生，中学生，大学生，来自五湖四海。
+尽管我们年龄不同，资历不同，但是我们努力建设 Linux 生态的目标是相同的，
+我们有信心、也有勇气做到这些！
+
+网站制作管理：chaodn Playhi momen jiwangyihao 时间世界
+
+UI概念设计师：akliusizhe qygwhk 
+
+## 加入我们
+软件维护员
+
+> 职位描述
+
+年龄：不限
+
+性别：不限
+
+工作地点：地球
+
+学历要求：不限
+
+能力要求：会使用linux，会打字，会上网，会下载软件安装包，有责任心，有电脑。
+
+职责：搜集软件，打包软件，维护者可以不是开发者，但必须有认真负责的态度，对于自己维护的软件包应当维护到底。若不能维护，请在软件标题写明已停止维护并通知站长或其他开发者以便于找人接手。
+
+投递须知：http://www.shenmo.tech:420/?p=193
+> 联系方式
+
+https://chat.spark-app.store/channel/Everything
+## 温馨提示
+
+* `clone` 的时候如果速度太慢或者内容太多，一般情况下可以利用 `--depth=1`。
+
+# Spark Store Official Website
+
+Spark Store official website by line.
+
+China: https://www.spark-app.store/
+
+Test: https://test.spark-app.store/
+
+Other links.
+
+3.0 new website design: https://chaodn-my.sharepoint.com/:u:/g/personal/chaodn_chaodn_tk/EVzjc7qmtwNMocYejwj_ZuUB7djHiN_xfqDsNpkydgh2_Q?e=c4rRRl
+
+Welcome UI bigwigs to join us!
+
+## Team Introduction
+Shenmo, a big brother of Deepin Technology Forum (bbs.deepin.org), started the Spark Working Group to enrich the Linux ecosystem.
+We are a young team, most of our members are post-00s, elementary school students, middle school students, college students, from all over the world.
+Despite our different ages and qualifications, we have the same goal of building a Linux ecosystem.
+We have the confidence and courage to do so!
+
+Website production management: chaodn Playhi momen jiwangyihao Time World
+
+UI concept designer: akliusizhe qygwhk 
+
+## Join us
+Software Maintainer
+
+> Job Description
+
+Age: not limited
+
+Gender: not limited
+
+Work location: Earth
+
+Education requirements: not limited
+
+Ability requirements: can use linux, can type, can surf the internet, can download software installation packages, responsible and have a computer.
+
+Duties: collect software, package software, maintainer can not be a developer, but must have a serious and responsible attitude, for their maintenance of the software package should be maintained to the end. If you cannot maintain the software, please write in the title of the software that you have stopped maintaining it and notify the webmaster or other developers so that they can find someone to take over.
+
+Submission instructions: http://www.shenmo.tech:420/?p=193
+> Contact
+
+https://chat.spark-app.store/channel/Everything
 
 
-安装、编译和部署
-===============
+# Site officiel du Spark Store
 
-```sh
-# 安装依赖
-$ yarn install
+Site officiel du Spark Store par ligne.
 
-# 本地开发
-$ yarn start
+Chine : https://www.spark-app.store/
 
-# 打包编译，将会把静态文件生成到 build 目录下   
-$ yarn build
+Test : https://test.spark-app.store/
 
-# 部署到 github pages
-GIT_USER=<Your GitHub username> yarn deploy
-cmd /C "set "GIT_USER=<GITHUB_USERNAME>" && yarn deploy"
-```
+Autres liens.
 
-给后来维护者以及我以后的注释
+3.0 nouveau design du site web : https://chaodn-my.sharepoint.com/:u:/g/personal/chaodn_chaodn_tk/EVzjc7qmtwNMocYejwj_ZuUB7djHiN_xfqDsNpkydgh2_Q?e=c4rRRl
 
-在./src/components/content/index.js里面定义了文本内容，我将所有翻译文件放到了这里并用数组保存了，
+Bienvenue aux gros bonnets de l'assurance-chômage !
 
-<Translate>里面不能有jsx，编译时候会报错的
+## Présentation de l'équipe
+Shenmo, un grand frère du Deepin Technology Forum (bbs.deepin.org), a créé le groupe de travail Spark pour enrichir l'écosystème Linux.
+Nous sommes une équipe jeune, la plupart de nos membres sont des post-modernes, des élèves d'école primaire, des collégiens, des étudiants, venus du monde entier.
+Malgré nos différences d'âge et de qualifications, nous avons le même objectif de construire un écosystème Linux.
+Nous avons la confiance et le courage nécessaires pour y parvenir !
 
-大部分的dom已经做到了，函数式的，很容易看懂，放到./src/components下了
+Gestion de la production du site web : chaodn Playhi momen jiwangyihao Time World
 
-每一次引入新的translate 就运行
+Concepteur de l'interface utilisateur : akliusizhe qygwhk 
 
-```sh
-yarn run write-translations --locale en
-yarn run write-translations --locale zh-CN
-```
+## Rejoignez-nous
+Responsable de la maintenance des logiciels
 
-用过qt国际化的朋友都会很熟悉的，然后编辑json文件就可以了
+> Description du poste
 
-大部分地方都没有写注释，理论上javascript是必须写的，因为javascript很屑，但是这是个小项目就不写了
+Âge : non limité
 
-## 目录结构
+Genre : non limité
 
-static里面放的是各种图片，因为这个工具只允许放这里，其他地方编译时候不会使用的
+Lieu de travail : Terre
 
-src是源码，page是几个网页，component里面放的是各种可以复用的dom，css里面放的是css和scss，这个都知道
+Exigences en matière de formation : non limité
 
-在根目录下有个文件叫docusaurus.config.js的，baseUrl是网站运行时候挂的位置，我因为github-page 分给了我这个位置我就只能定义到这里，如果使用时候挂到根目录，就用"/"
+Aptitudes requises : savoir utiliser linux, savoir taper, savoir surfer sur internet, savoir télécharger des logiciels, être responsable et avoir un ordinateur.
+
+Tâches : collecter des logiciels, des paquets de logiciels, le responsable de la maintenance ne peut pas être un développeur, mais doit avoir une attitude sérieuse et responsable, car leur maintenance du paquet de logiciels doit être assurée jusqu'au bout. Si vous ne pouvez pas maintenir le logiciel, veuillez écrire dans le titre du logiciel que vous avez cessé de le maintenir et en informer le webmaster ou les autres développeurs afin qu'ils puissent trouver quelqu'un pour prendre la relève.
+
+Instructions pour la soumission : http://www.shenmo.tech:420/?p=193
+> Contact
+
+https://chat.spark-app.store/channel/Everything
+
+
